@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>XHR CRUD BY PROMISE </title>
+<style>
+    body{
+     
+background: linear-gradient(to right, #333399, #ff00cc); 
+    }
+    .card-bg{   
+background: linear-gradient(to right, #DBD65C, #5614B0);
+    }
+</style>
+
+</head>
+<body>
+    <h1 class="bg-info text-white text-center p-4 mb-4">XHR CRUD BY PROMISE USING GIT JSON SERVER</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card card-bg mb-4 p-4">
+                <form id="postForm" >
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text"  id="title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Content</label>
+                        <input type="text" id="content" class="form-control">
+                    </div>
+                    <div class="text-right">
+                        <button type="reset" class="btn btn-warning" id="resetBtn">Reset</button>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+                        <button type="button" class="btn btn-success d-none" id="UpdateBtn">Update</button>
+                    </div>
+                </form>
+               </div>
+               <div id="postContainer" class="d-flex flex-column-reverse">
+               
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
